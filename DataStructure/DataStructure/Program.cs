@@ -7,7 +7,7 @@ internal class Program
         Console.WriteLine("Welcome to Data Structure Program ");
         while (true)
         {
-            Console.WriteLine("\n1.Unordered List \n2.Ordered List \n3.Balancing Parantheses \n4.Banking Cash Counter");
+            Console.WriteLine("\n1.Unordered List \n2.Ordered List \n3.Balancing Parantheses \n4.Banking Cash Counter \n5.Palindrome Checker");
             Console.WriteLine("Enter a choice from above");
             int check = Convert.ToInt32(Console.ReadLine());
             switch (check)
@@ -34,6 +34,10 @@ internal class Program
                 case 4:
                     BankingCashCounter banking = new BankingCashCounter();
                     banking.MaintainQueue();
+                    break;
+                case 5:
+                    PalindromeChecker<char> checker = new PalindromeChecker<char>();
+                    checker.IsPalindrome();
                     break;
                 default:
                     Console.WriteLine("Please enter the correct choice ");
